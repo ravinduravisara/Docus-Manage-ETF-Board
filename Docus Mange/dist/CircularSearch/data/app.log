@@ -1,0 +1,16 @@
+[2026-02-25 09:12:15] INFO     sinhala_pdf_search – Starting Circular Search
+[2026-02-25 09:12:15] INFO     src.db.database – Database initialised at C:\Users\Ravindu\Desktop\Ministry Sft\sinhala-pdf-search\dist\CircularSearch\data\app.db
+[2026-02-25 09:12:15] INFO     src.db.database – Seeded 8 default categories
+[2026-02-25 09:12:15] INFO     src.db.database – Seeded default admin account (admin / admin123)
+[2026-02-25 09:12:26] INFO     src.services.ocr_engine – Tesseract version: 5.4.0.20240606
+[2026-02-25 09:16:27] INFO     sinhala_pdf_search – Starting Circular Search
+[2026-02-25 09:16:27] INFO     src.db.database – Database initialised at C:\Users\Ravindu\Desktop\Ministry Sft\sinhala-pdf-search\dist\CircularSearch\data\app.db
+[2026-02-25 09:16:36] INFO     src.services.ocr_engine – Tesseract version: 5.4.0.20240606
+[2026-02-25 10:20:04] INFO     sinhala_pdf_search – Starting Circular Search
+[2026-02-25 10:20:04] INFO     src.db.database – Database initialised at C:\Users\Ravindu\Desktop\Ministry Sft\sinhala-pdf-search\dist\CircularSearch\data\app.db
+[2026-02-25 10:20:11] INFO     src.services.ocr_engine – Tesseract version: 5.4.0.20240606
+[2026-02-26 09:06:05] INFO     sinhala_pdf_search – Starting Circular Search
+[2026-02-26 09:06:05] INFO     src.db.database – Database initialised at C:\Users\Ravindu\Desktop\Ministry Sft\sinhala-pdf-search\dist\CircularSearch\data\app.db
+[2026-02-26 09:06:17] INFO     src.services.ocr_engine – Tesseract version: 5.4.0.20240606
+[2026-02-26 09:06:49] INFO     sinhala_pdf_search – Starting Circular Search
+[2026-02-26 09:06:49] INFO     src.db.database – Database initialised at C:\Users\Ravindu\Desktop\Ministry Sft\sinhala-pdf-search\dist\CircularSearch\data\app.db

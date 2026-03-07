@@ -1,0 +1,1254 @@
+([('DocusManage.exe',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\sinhala-pdf-search\\build\\CircularSearch\\DocusManage.exe',
+   'EXECUTABLE'),
+  ('pymupdf\\mupdfcpp64.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdfcpp64.dll',
+   'BINARY'),
+  ('python314.dll',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\python314.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\libEGL.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libEGL.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\libGLESv2.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libGLESv2.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\opengl32sw.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\opengl32sw.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\d3dcompiler_47.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\d3dcompiler_47.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qgif.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qgif.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qwbmp.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qwbmp.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qtga.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qtga.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qico.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qico.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platforms\\qwindows.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qwindows.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qtiff.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qtiff.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platforms\\qminimal.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qminimal.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platforms\\qoffscreen.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qoffscreen.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platforms\\qwebgl.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qwebgl.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qicns.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qicns.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\generic\\qtuiotouchplugin.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\generic\\qtuiotouchplugin.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qjpeg.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qjpeg.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\iconengines\\qsvgicon.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\iconengines\\qsvgicon.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qsvg.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qsvg.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qwebp.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qwebp.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\styles\\qwindowsvistastyle.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\styles\\qwindowsvistastyle.dll',
+   'BINARY'),
+  ('select.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_zstd.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_zstd.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('_wmi.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_wmi.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\cyextension\\util.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\util.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\cyextension\\resultproxy.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\resultproxy.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\cyextension\\processors.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\processors.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\cyextension\\immutabledict.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\immutabledict.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\cyextension\\collections.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\collections.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_uuid.pyd',
+   'EXTENSION'),
+  ('greenlet\\_greenlet.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\greenlet\\_greenlet.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('_sqlite3.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_sqlite3.pyd',
+   'EXTENSION'),
+  ('PIL\\_webp.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PIL\\_webp.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingtk.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PIL\\_imagingtk.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_avif.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PIL\\_avif.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingcms.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PIL\\_imagingcms.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingmath.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PIL\\_imagingmath.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('_elementtree.pyd',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\_elementtree.pyd',
+   'EXTENSION'),
+  ('PIL\\_imaging.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PIL\\_imaging.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('pymupdf\\_mupdf.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\_mupdf.pyd',
+   'EXTENSION'),
+  ('pymupdf\\_extra.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\_extra.pyd',
+   'EXTENSION'),
+  ('PyQt5\\QtCore.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\QtCore.pyd',
+   'EXTENSION'),
+  ('PyQt5\\sip.cp314-win_amd64.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\sip.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('PyQt5\\QtGui.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\QtGui.pyd',
+   'EXTENSION'),
+  ('PyQt5\\QtWidgets.pyd',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\QtWidgets.pyd',
+   'EXTENSION'),
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-convert-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-environment-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\MSVCP140.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\MSVCP140.dll',
+   'BINARY'),
+  ('api-ms-win-crt-filesystem-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-filesystem-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-utility-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-time-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-heap-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-conio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\VCRUNTIME140.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\VCRUNTIME140_1.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Gui.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Gui.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Core.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Core.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5WebSockets.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5WebSockets.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Quick.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Quick.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Network.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Network.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5DBus.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5DBus.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Svg.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Svg.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Widgets.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Widgets.dll',
+   'BINARY'),
+  ('libcrypto-3.dll',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\libcrypto-3.dll',
+   'BINARY'),
+  ('libssl-3.dll',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\libssl-3.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\libffi-8.dll',
+   'BINARY'),
+  ('sqlite3.dll',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\sqlite3.dll',
+   'BINARY'),
+  ('python3.dll',
+   'C:\\Users\\Ravindu\\AppData\\Local\\Programs\\Python\\Python314\\python3.dll',
+   'BINARY'),
+  ('ucrtbase.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\ucrtbase.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\MSVCP140_1.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\MSVCP140_1.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Qml.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Qml.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5QmlModels.dll',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5QmlModels.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-datetime-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('assets\\app_icon.ico',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\sinhala-pdf-search\\assets\\app_icon.ico',
+   'DATA'),
+  ('assets\\app_icon.png',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\sinhala-pdf-search\\assets\\app_icon.png',
+   'DATA'),
+  ('fitz\\__init__.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\fitz\\__init__.py',
+   'DATA'),
+  ('fitz\\table.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\fitz\\table.py',
+   'DATA'),
+  ('fitz\\utils.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\fitz\\utils.py',
+   'DATA'),
+  ('pymupdf-1.27.1.dist-info\\COPYING',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf-1.27.1.dist-info\\COPYING',
+   'DATA'),
+  ('pymupdf-1.27.1.dist-info\\INSTALLER',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf-1.27.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('pymupdf-1.27.1.dist-info\\METADATA',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf-1.27.1.dist-info\\METADATA',
+   'DATA'),
+  ('pymupdf-1.27.1.dist-info\\README.md',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf-1.27.1.dist-info\\README.md',
+   'DATA'),
+  ('pymupdf-1.27.1.dist-info\\RECORD',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf-1.27.1.dist-info\\RECORD',
+   'DATA'),
+  ('pymupdf-1.27.1.dist-info\\REQUESTED',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf-1.27.1.dist-info\\REQUESTED',
+   'DATA'),
+  ('pymupdf-1.27.1.dist-info\\WHEEL',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf-1.27.1.dist-info\\WHEEL',
+   'DATA'),
+  ('pymupdf-1.27.1.dist-info\\entry_points.txt',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf-1.27.1.dist-info\\entry_points.txt',
+   'DATA'),
+  ('pymupdf\\__init__.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\__init__.py',
+   'DATA'),
+  ('pymupdf\\__main__.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\__main__.py',
+   'DATA'),
+  ('pymupdf\\_apply_pages.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\_apply_pages.py',
+   'DATA'),
+  ('pymupdf\\_build.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\_build.py',
+   'DATA'),
+  ('pymupdf\\_wxcolors.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\_wxcolors.py',
+   'DATA'),
+  ('pymupdf\\extra.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\extra.py',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\classes.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\classes.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\classes2.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\classes2.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\exceptions.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\exceptions.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\extra.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\extra.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\archive.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\archive.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\band-writer.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\band-writer.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\barcode.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\barcode.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\bidi.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\bidi.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\bitmap.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\bitmap.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\buffer.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\buffer.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\color.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\color.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\compress.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\compress.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\compressed-buffer.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\compressed-buffer.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\config.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\config.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\context.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\context.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\crypt.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\crypt.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\deskew.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\deskew.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\device.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\device.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\display-list.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\display-list.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\document.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\document.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\export.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\export.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\filter.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\filter.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\font.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\font.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\geometry.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\geometry.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\getopt.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\getopt.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\glyph-cache.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\glyph-cache.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\glyph.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\glyph.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\hash.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\hash.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\heap-imp.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\heap-imp.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\heap.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\heap.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\hyphen.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\hyphen.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\image.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\image.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\json.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\json.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\link.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\link.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\log.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\log.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\outline.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\outline.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\output-svg.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\output-svg.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\output.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\output.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\path.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\path.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\pixmap.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\pixmap.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\pool.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\pool.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\separation.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\separation.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\shade.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\shade.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\store.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\store.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\story-writer.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\story-writer.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\story.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\story.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\stream.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\stream.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\string-util.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\string-util.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\structured-text.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\structured-text.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\system.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\system.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\text.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\text.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\track-usage.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\track-usage.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\transition.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\transition.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\tree.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\tree.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\types.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\types.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\util.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\util.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\version.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\version.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\write-pixmap.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\write-pixmap.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\writer.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\writer.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\xml.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\fitz\\xml.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\functions.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\functions.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\helpers\\mu-office-lib.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\helpers\\mu-office-lib.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\helpers\\mu-threads.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\helpers\\mu-threads.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\helpers\\pkcs7-openssl.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\helpers\\pkcs7-openssl.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\html.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\html.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\internal.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\internal.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\memento.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\memento.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\annot.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\annot.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\clean.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\clean.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\cmap.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\cmap.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\crypt.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\crypt.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\document.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\document.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\event.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\event.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\font.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\font.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\form.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\form.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\image-rewriter.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\image-rewriter.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\interpret.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\interpret.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\javascript.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\javascript.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\name-table.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\name-table.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\object.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\object.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\page.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\page.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\parse.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\parse.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\recolor.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\recolor.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\resource.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\resource.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\xref.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\xref.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\zugferd.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\pdf\\zugferd.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\include\\mupdf\\ucdn.h',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\include\\mupdf\\ucdn.h',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\lib\\libmuthreads.lib',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\lib\\libmuthreads.lib',
+   'DATA'),
+  ('pymupdf\\mupdf-devel\\lib\\mupdfcpp64.lib',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf-devel\\lib\\mupdfcpp64.lib',
+   'DATA'),
+  ('pymupdf\\mupdf.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\mupdf.py',
+   'DATA'),
+  ('pymupdf\\py.typed',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\py.typed',
+   'DATA'),
+  ('pymupdf\\pymupdf.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\pymupdf.py',
+   'DATA'),
+  ('pymupdf\\table.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\table.py',
+   'DATA'),
+  ('pymupdf\\utils.py',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\pymupdf\\utils.py',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\WHEEL',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\METADATA',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\METADATA',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\INSTALLER',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\REQUESTED',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\REQUESTED',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\RECORD',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\top_level.txt',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\top_level.txt',
+   'DATA'),
+  ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
+   'ipsum.txt',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ko.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_hu.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_pl.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_pl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_tr.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_it.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_sk.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ja.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ru.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_uk.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_uk.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_zh_CN.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_zh_CN.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_es.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ja.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ko.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_zh_CN.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_zh_CN.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_da.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_de.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fr.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_he.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_he.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_bg.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_en.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_zh_TW.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_bg.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_lv.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_lv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_da.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_bg.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_zh_TW.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_hu.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_de.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_cs.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_cs.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_hu.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_gd.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_gd.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_cs.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_cs.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_it.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ko.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sv.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_sl.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_sl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ca.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_lt.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_lt.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_cs.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_cs.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_zh_TW.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sk.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fi.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fi.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_gl.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_gl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_de.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_sk.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fa.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fa.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ar.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_he.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_he.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_pl.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_pl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ar.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_pl.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_pl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ja.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_gd.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_gd.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ca.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_es.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_fr.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_da.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_lv.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_pt.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_pt.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_uk.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ru.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_en.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ca.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_fi.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_fi.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_tr.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_fr.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_it.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_tr.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_es.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_gl.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_gl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_en.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ar.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sl.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ru.qm',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\.venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ru.qm',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Users\\Ravindu\\Desktop\\Ministry '
+   'Sft\\sinhala-pdf-search\\build\\CircularSearch\\base_library.zip',
+   'DATA')],)
