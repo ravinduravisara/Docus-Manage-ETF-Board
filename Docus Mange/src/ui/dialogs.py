@@ -134,6 +134,7 @@ class PDFMetadataDialog(QDialog):
         self.date_edit.setCalendarPopup(True)
         self.date_edit.setDate(QDate.currentDate())
         self.date_edit.setDisplayFormat("yyyy-MM-dd")
+        self.date_edit.setReadOnly(False)
         form.addRow("Date:", self.date_edit)
 
         self.cmb_category = QComboBox()

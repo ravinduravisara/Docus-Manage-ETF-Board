@@ -1,5 +1,5 @@
-('C:\\Users\\Ravindu\\Desktop\\Ministry '
- 'Sft\\sinhala-pdf-search\\build\\CircularSearch\\DocusManage.pkg',
+('C:\\Users\\acer\\Documents\\GitHub\\Docus-Manage-ETF-Board\\Docus '
+ 'Mange\\build\\CircularSearch\\DocusManage.pkg',
  {'BINARY': True,
   'DATA': True,
   'EXECUTABLE': True,
@@ -11,55 +11,50 @@
   'SYMLINK': False},
  [('pyi-contents-directory _internal', '', 'OPTION'),
   ('PYZ-00.pyz',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\sinhala-pdf-search\\build\\CircularSearch\\PYZ-00.pyz',
+   'C:\\Users\\acer\\Documents\\GitHub\\Docus-Manage-ETF-Board\\Docus '
+   'Mange\\build\\CircularSearch\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\sinhala-pdf-search\\build\\CircularSearch\\localpycs\\struct.pyc',
+   'C:\\Users\\acer\\Documents\\GitHub\\Docus-Manage-ETF-Board\\Docus '
+   'Mange\\build\\CircularSearch\\localpycs\\struct.pyc',
    'PYMODULE'),
   ('pyimod01_archive',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\sinhala-pdf-search\\build\\CircularSearch\\localpycs\\pyimod01_archive.pyc',
+   'C:\\Users\\acer\\Documents\\GitHub\\Docus-Manage-ETF-Board\\Docus '
+   'Mange\\build\\CircularSearch\\localpycs\\pyimod01_archive.pyc',
    'PYMODULE'),
   ('pyimod02_importers',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\sinhala-pdf-search\\build\\CircularSearch\\localpycs\\pyimod02_importers.pyc',
+   'C:\\Users\\acer\\Documents\\GitHub\\Docus-Manage-ETF-Board\\Docus '
+   'Mange\\build\\CircularSearch\\localpycs\\pyimod02_importers.pyc',
    'PYMODULE'),
   ('pyimod03_ctypes',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\sinhala-pdf-search\\build\\CircularSearch\\localpycs\\pyimod03_ctypes.pyc',
+   'C:\\Users\\acer\\Documents\\GitHub\\Docus-Manage-ETF-Board\\Docus '
+   'Mange\\build\\CircularSearch\\localpycs\\pyimod03_ctypes.pyc',
    'PYMODULE'),
   ('pyimod04_pywin32',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\sinhala-pdf-search\\build\\CircularSearch\\localpycs\\pyimod04_pywin32.pyc',
+   'C:\\Users\\acer\\Documents\\GitHub\\Docus-Manage-ETF-Board\\Docus '
+   'Mange\\build\\CircularSearch\\localpycs\\pyimod04_pywin32.pyc',
    'PYMODULE'),
   ('pyiboot01_bootstrap',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'C:\\Users\\acer\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
    'PYSOURCE'),
   ('pyi_rth_setuptools',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'C:\\Users\\acer\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
    'PYSOURCE'),
   ('pyi_rth_pkgutil',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'C:\\Users\\acer\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
    'PYSOURCE'),
   ('pyi_rth_inspect',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'C:\\Users\\acer\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
   ('pyi_rth_pyqt5',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt5.py',
+   'C:\\Users\\acer\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt5.py',
    'PYSOURCE'),
   ('pyi_rth_multiprocessing',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry '
-   'Sft\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'C:\\Users\\acer\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
   ('main',
-   'C:\\Users\\Ravindu\\Desktop\\Ministry Sft\\sinhala-pdf-search\\main.py',
+   'C:\\Users\\acer\\Documents\\GitHub\\Docus-Manage-ETF-Board\\Docus '
+   'Mange\\main.py',
    'PYSOURCE')],
  'python314.dll',
  True,

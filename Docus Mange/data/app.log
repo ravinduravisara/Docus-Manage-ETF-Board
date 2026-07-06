@@ -292,3 +292,13 @@
 [2026-02-26 09:11:44] INFO     src.services.ocr_engine – Tesseract version: 5.4.0.20240606
 [2026-02-28 10:42:26] INFO     sinhala_pdf_search – Starting Docus Manage
 [2026-02-28 10:42:26] INFO     src.db.database – Database initialised at C:\Users\Ravindu\Desktop\Ministry Sft\sinhala-pdf-search\data\app.db
+[2026-07-06 11:29:10] INFO     sinhala_pdf_search – Starting Docus Manage
+[2026-07-06 11:29:10] INFO     src.db.database – Database initialised at C:\Users\acer\Documents\GitHub\Docus-Manage-ETF-Board\Docus Mange\data\app.db
+[2026-07-06 11:30:42] INFO     sinhala_pdf_search – Starting Docus Manage
+[2026-07-06 11:30:42] INFO     src.db.database – Database initialised at C:\Users\acer\Documents\GitHub\Docus-Manage-ETF-Board\Docus Mange\data\app.db
+[2026-07-06 11:30:54] WARNING  src.services.ocr_engine – Tesseract not found – OCR will be unavailable.
+[2026-07-06 11:31:09] INFO     src.db.database – Deleted document id=2
+[2026-07-06 11:31:13] INFO     src.db.database – Deleted document id=1
+[2026-07-06 11:34:06] INFO     sinhala_pdf_search – Starting Docus Manage
+[2026-07-06 11:34:06] INFO     src.db.database – Database initialised at C:\Users\acer\Documents\GitHub\Docus-Manage-ETF-Board\Docus Mange\data\app.db
+[2026-07-06 11:34:14] WARNING  src.services.ocr_engine – Tesseract not found – OCR will be unavailable.

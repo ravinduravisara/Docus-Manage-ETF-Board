@@ -111,6 +111,13 @@ def main():
             border: none;
             width: 24px;
         }
+        QDateEdit::down-arrow {
+            image: none;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 6px solid #aaa;
+            margin-right: 6px;
+        }
         QCalendarWidget {
             background-color: #2b2b2b;
             color: #e0e0e0;

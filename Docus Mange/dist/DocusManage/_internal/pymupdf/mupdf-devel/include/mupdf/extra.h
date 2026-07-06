@@ -186,4 +186,29 @@ std::string fz_decode_barcode_from_pixmap2(fz_context *ctx, fz_barcode_type *typ
 leak of the returned string. */
 std::string fz_decode_barcode_from_page2(fz_context *ctx, fz_barcode_type *type, fz_page *page, fz_rect subarea, int rotate);
 
+/** Swig-friendly wrapper for fz_new_culling_device_with_rects(). */
+fz_device *fz_new_culling_device_with_rects2(fz_context *ctx, fz_device *passthrough, const std::vector<fz_rect>& rects);
+
+/** Swig-friendly wrapper for fz_new_pixmap_from_page_culling_text(). */
+fz_pixmap *fz_new_pixmap_from_page_culling_text2(fz_context *ctx, fz_page *page, fz_matrix ctm, fz_colorspace *cs, int alpha, const std::vector<fz_rect>& rects);
+
+/** Swig-friendly wrapper for fz_new_pixmap_from_page_number_culling_text(). */
+fz_pixmap *fz_new_pixmap_from_page_number_culling_text2(fz_context *ctx, fz_document *doc, int number, fz_matrix ctm, fz_colorspace *cs, int alpha, const std::vector<fz_rect>& rects);
+
+/** Swig-friendly wrapper for fz_new_pixmap_from_display_list_culling_text(). */
+fz_pixmap *fz_new_pixmap_from_display_list_culling_text2(fz_context *ctx, fz_display_list *list, fz_matrix ctm, fz_colorspace *cs, int alpha, const std::vector<fz_rect>& rects);
+
+/** Swig-friendly wrapper for fz_new_pixmap_from_page_culling_text_etc(). */
+fz_pixmap *fz_new_pixmap_from_page_culling_text_etc2(fz_context *ctx, fz_page *page, fz_matrix ctm, fz_colorspace *cs, int alpha, const std::vector<fz_rect>& rects, float borders);
+
+/** Swig-friendly wrapper for fz_new_pixmap_from_page_number_culling_text_etc(). */
+fz_pixmap *fz_new_pixmap_from_page_number_culling_text_etc2(fz_context *ctx, fz_document *doc, int number, fz_matrix ctm, fz_colorspace *cs, int alpha, const std::vector<fz_rect>& rects, float borders);
+
+/** Swig-friendly wrapper for fz_new_pixmap_from_display_list_culling_text_etc(). */
+fz_pixmap *fz_new_pixmap_from_display_list_culling_text_etc2(fz_context *ctx, fz_display_list *list, fz_matrix ctm, fz_colorspace *cs, int alpha, const std::vector<fz_rect>& rects, float borders);
+
+/** Swig-friendly wrapper for fz_find_table_within_grid(). */
+fz_stext_block *fz_find_table_within_grid_floats(fz_context *ctx, fz_stext_page *page, const std::vector<float>& xs, const std::vector<float>& ys, float limit);
+fz_stext_block *fz_find_table_within_grid_dividers(fz_context *ctx, fz_stext_page *page, const std::vector<fz_stext_grid_divider>& xs, const std::vector<fz_stext_grid_divider>& ys, float limit);
+
 #endif

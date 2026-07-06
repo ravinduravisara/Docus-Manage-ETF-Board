@@ -30,6 +30,12 @@ namespace mupdf
 	/** Class-aware wrapper for `::fz_absi()`.  */
 	FZ_FUNCTION int fz_absi(int i);
 
+	/** Class-aware wrapper for `::fz_access_option_by_index()`.  */
+	/**
+		Mark a given option index as being accessed.
+	*/
+	FZ_FUNCTION void fz_access_option_by_index(const FzOptions& options, int i);
+
 	/** Class-aware wrapper for `::fz_add_layout_char()`.  */
 	/**
 		Add a new char to the line at the end of the layout block.
@@ -161,16 +167,16 @@ namespace mupdf
 	FZ_FUNCTION void fz_append_image_as_data_uri(const FzBuffer& out, const FzImage& image);
 
 	/** Class-aware wrapper for `::fz_append_int16_be()`.  */
-	FZ_FUNCTION void fz_append_int16_be(const FzBuffer& buf, int x);
+	FZ_FUNCTION void fz_append_int16_be(const FzBuffer& buf, int16_t x);
 
 	/** Class-aware wrapper for `::fz_append_int16_le()`.  */
-	FZ_FUNCTION void fz_append_int16_le(const FzBuffer& buf, int x);
+	FZ_FUNCTION void fz_append_int16_le(const FzBuffer& buf, int16_t x);
 
 	/** Class-aware wrapper for `::fz_append_int32_be()`.  */
-	FZ_FUNCTION void fz_append_int32_be(const FzBuffer& buf, int x);
+	FZ_FUNCTION void fz_append_int32_be(const FzBuffer& buf, int32_t x);
 
 	/** Class-aware wrapper for `::fz_append_int32_le()`.  */
-	FZ_FUNCTION void fz_append_int32_le(const FzBuffer& buf, int x);
+	FZ_FUNCTION void fz_append_int32_le(const FzBuffer& buf, int32_t x);
 
 	/** Class-aware wrapper for `::fz_append_json()`.  */
 	FZ_FUNCTION void fz_append_json(const FzBuffer& buf, const FzJson& value);
@@ -193,12 +199,64 @@ namespace mupdf
 	/** Class-aware wrapper for `::fz_append_string()`.  */
 	FZ_FUNCTION void fz_append_string(const FzBuffer& buf, const char *data);
 
+	/** Class-aware wrapper for `::fz_append_uint16_be()`.  */
+	FZ_FUNCTION void fz_append_uint16_be(const FzBuffer& buf, uint16_t x);
+
+	/** Class-aware wrapper for `::fz_append_uint16_le()`.  */
+	FZ_FUNCTION void fz_append_uint16_le(const FzBuffer& buf, uint16_t x);
+
+	/** Class-aware wrapper for `::fz_append_uint32_be()`.  */
+	FZ_FUNCTION void fz_append_uint32_be(const FzBuffer& buf, uint32_t x);
+
+	/** Class-aware wrapper for `::fz_append_uint32_le()`.  */
+	FZ_FUNCTION void fz_append_uint32_le(const FzBuffer& buf, uint32_t x);
+
 	/** Class-aware wrapper for `::fz_append_vprintf()`.  */
 	/**
 		fz_append_vprintf: Format and append data to buffer using
 		printf-like formatting with varargs (see fz_vsnprintf).
 	*/
 	FZ_FUNCTION void fz_append_vprintf(const FzBuffer& buffer, const char *fmt, va_list args);
+
+	/** Class-aware wrapper for `::fz_apply_draw_options()`.  */
+	/**
+		Parse draw device options from an fz_options structure.
+	
+		This assumes that the draw_options struct has been initialised already.
+	*/
+	FZ_FUNCTION void fz_apply_draw_options(FzDrawOptions& draw_options, const FzOptions& options);
+
+	/** Class-aware wrapper for `::fz_apply_pcl_options()`.  */
+	FZ_FUNCTION void fz_apply_pcl_options(const FzPclOptions& opts, const FzOptions& args);
+
+	/** Class-aware wrapper for `::fz_apply_pclm_options()`.  */
+	FZ_FUNCTION void fz_apply_pclm_options(const FzPclmOptions& opts, const FzOptions& args);
+
+	/** Class-aware wrapper for `::fz_apply_pdfocr_options()`.  */
+	FZ_FUNCTION void fz_apply_pdfocr_options(FzPdfocrOptions& opts, const FzOptions& options);
+
+	/** Class-aware wrapper for `::fz_apply_pwg_options()`.  */
+	/**
+		Apply the given options to an initialised pwg options struct.
+	*/
+	FZ_FUNCTION void fz_apply_pwg_options(FzPwgOptions& opts, const FzOptions& args);
+
+	/** Class-aware wrapper for `::fz_apply_search_options()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_apply_search_options(::fz_options *opts)` => ::fz_search_options options
+	 */
+	FZ_FUNCTION void fz_apply_search_options(::fz_search_options *options, const FzOptions& opts);
+
+	/** Class-aware wrapper for `::fz_apply_stext_options()`.  */
+	/**
+		Parse stext device options from an fz_options struct
+		into an already initialised opts structure.
+	*/
+	FZ_FUNCTION void fz_apply_stext_options(FzStextOptions& opts, const FzOptions& options);
+
+	/** Class-aware wrapper for `::fz_apply_svg_device_options()`.  */
+	FZ_FUNCTION void fz_apply_svg_device_options(const FzSvgDeviceOptions& opts, const FzOptions& options);
 
 	/** Class-aware wrapper for `::fz_arc4_encrypt()`.  */
 	/**
@@ -1136,17 +1194,6 @@ namespace mupdf
 	*/
 	FZ_FUNCTION FzPixmap fz_convert_separation_pixmap_to_base(const FzPixmap& src);
 
-	/** Class-aware wrapper for `::fz_copy_option()`.  */
-	/**
-		Copy an option (val) into a destination buffer (dest), of maxlen
-		bytes.
-	
-		Returns the number of bytes (including terminator) that did not
-		fit. If val is maxlen or greater bytes in size, it will be left
-		unterminated.
-	*/
-	FZ_FUNCTION size_t fz_copy_option(const char *val, char *dest, size_t maxlen);
-
 	/** Class-aware wrapper for `::fz_copy_pixmap_rect()`.  */
 	FZ_FUNCTION void fz_copy_pixmap_rect(const FzPixmap& dest, const FzPixmap& src, const FzIrect& r, const FzDefaultColorspaces& default_cs);
 
@@ -1200,6 +1247,12 @@ namespace mupdf
 		At least 1.
 	*/
 	FZ_FUNCTION int fz_count_chapters(const FzDocument& doc);
+
+	/** Class-aware wrapper for `::fz_count_options()`.  */
+	/**
+		Count the number of options in an options structure.
+	*/
+	FZ_FUNCTION int fz_count_options(const FzOptions& options);
 
 	/** Class-aware wrapper for `::fz_count_pages()`.  */
 	/**
@@ -1283,6 +1336,12 @@ namespace mupdf
 		modify a packed path.
 	*/
 	FZ_FUNCTION void fz_curvetoy(const FzPath& path, float x0, float y0, float x2, float y2);
+
+	/** Class-aware wrapper for `::fz_debug_stext_page()`.  */
+	/**
+		Convenience function to call the above.
+	*/
+	FZ_FUNCTION void fz_debug_stext_page(const FzStextPage& page, int id);
 
 	/** Class-aware wrapper for `::fz_debug_store()`.  */
 	/**
@@ -1945,9 +2004,6 @@ namespace mupdf
 	/** Class-aware wrapper for `::fz_end_structure()`.  */
 	FZ_FUNCTION void fz_end_structure(const FzDevice& dev);
 
-	/** Class-aware wrapper for `::fz_end_throw_on_repair()`.  */
-	FZ_FUNCTION void fz_end_throw_on_repair();
-
 	/** Class-aware wrapper for `::fz_end_tile()`.  */
 	FZ_FUNCTION void fz_end_tile(const FzDevice& dev);
 
@@ -2100,6 +2156,35 @@ namespace mupdf
 		the table.
 	*/
 	FZ_FUNCTION FzStextBlock fz_find_table_within_bounds(const FzStextPage& page, const FzRect& bounds);
+
+	/** Class-aware wrapper for `::fz_find_table_within_grid()`.  */
+	/**
+		Interpret the contents of a given stext page that fall within
+		a given grid as a table.
+	
+		The page contents will be rewritten to contain a Table
+		structure with the identified content in it.
+	
+		This uses the same logic as for fz_table_hunt, without the
+		actual hunting, and the grid detection phase. fz_table_hunt
+		hunts to find possible bounds for multiple tables on the
+		page; this routine just finds a single table contained within
+		the given rectangle. The grid detection phase is skipped, and
+		we just use the grid as given to us. We still perform the
+		cell analysis stage though, so the grid can be refined.
+	
+		Returns the stext_block list that contains the content of
+		the table, or NULL if no table is found that scores below
+		limit.
+	*/
+	FZ_FUNCTION FzStextBlock fz_find_table_within_grid(const FzStextPage& page, const FzStextGridPositions& xpos, const FzStextGridPositions& ypos, float limit);
+
+	/** Class-aware wrapper for `::fz_find_table_within_grid_dividers()`.  */
+	FZ_FUNCTION FzStextBlock fz_find_table_within_grid_dividers(const FzStextPage& page, const std::vector<fz_stext_grid_divider> &xs, const std::vector<fz_stext_grid_divider> &ys, float limit);
+
+	/** Class-aware wrapper for `::fz_find_table_within_grid_floats()`.  */
+	/** Swig-friendly wrapper for fz_find_table_within_grid(). */
+	FZ_FUNCTION FzStextBlock fz_find_table_within_grid_floats(const FzStextPage& page, const std::vector<float> &xs, const std::vector<float> &ys, float limit);
 
 	/** Class-aware wrapper for `::fz_flotilla_raft_area()`.  */
 	FZ_FUNCTION FzRect fz_flotilla_raft_area(const FzFlotilla& flot, int i);
@@ -2365,6 +2450,16 @@ namespace mupdf
 	*/
 	FZ_FUNCTION std::string fz_get_glyph_name2(const FzFont& font, int glyph);
 
+	/** Class-aware wrapper for `::fz_get_option_by_index()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_get_option_by_index(::fz_options *options, int i)` => `(const char *, const char *val)`
+	 */
+	/**
+		Get an option by index.
+	*/
+	FZ_FUNCTION const char *fz_get_option_by_index(const FzOptions& options, int i, const char **val);
+
 	/** Class-aware wrapper for `::fz_get_pixmap_from_image()`.
 	
 	This function has out-params. Python/C# wrappers look like:
@@ -2562,17 +2657,6 @@ namespace mupdf
 	*/
 	FZ_FUNCTION int fz_has_archive_entry(const FzArchive& arch, const char *name);
 
-	/** Class-aware wrapper for `::fz_has_option()`.
-	
-	This function has out-params. Python/C# wrappers look like:
-		`fz_has_option(const char *opts, const char *key)` => `(int, const char *val)`
-	 */
-	/**
-		Look for a given option (key) in the opts string. Return 1 if
-		it has it, and update *val to point to the value within opts.
-	*/
-	FZ_FUNCTION int fz_has_option(const char *opts, const char *key, const char **val);
-
 	/** Class-aware wrapper for `::fz_has_permission()`.  */
 	/**
 		Check permission flags on document.
@@ -2659,6 +2743,12 @@ namespace mupdf
 	/** Class-aware wrapper for `::fz_ignore_text()`.  */
 	FZ_FUNCTION void fz_ignore_text(const FzDevice& dev, const FzText& text, const FzMatrix& ctm);
 
+	/** Class-aware wrapper for `::fz_image_digest()`.  */
+	/**
+		Compute a checksum for the image.
+	*/
+	FZ_FUNCTION void fz_image_digest(const FzImage& img, unsigned char digest[16]);
+
 	/** Class-aware wrapper for `::fz_image_orientation()`.  */
 	/**
 		Request the natural orientation of an image.
@@ -2724,6 +2814,79 @@ namespace mupdf
 		the points before including the others.
 	*/
 	FZ_FUNCTION FzRect fz_include_point_in_rect(const FzRect& r, const FzPoint& p);
+
+	/** Class-aware wrapper for `::fz_init_draw_options()`.  */
+	/**
+		Initialise a draw_options struct to sensible values.
+	*/
+	FZ_FUNCTION void fz_init_draw_options(FzDrawOptions& draw_options);
+
+	/** Class-aware wrapper for `::fz_init_pcl_options()`.  */
+	/**
+		Parse PCL options.
+	
+		Currently defined options and values are as follows:
+	
+			preset=X	Either "generic" or one of the presets as for fz_pcl_preset.
+			spacing=0	No vertical spacing capability
+			spacing=1	PCL 3 spacing (<ESC>*p+<n>Y)
+			spacing=2	PCL 4 spacing (<ESC>*b<n>Y)
+			spacing=3	PCL 5 spacing (<ESC>*b<n>Y and clear seed row)
+			mode2		Disable/Enable mode 2 graphics compression
+			mode3		Disable/Enable mode 3 graphics compression
+			eog_reset	End of graphics (<ESC>*rB) resets all parameters
+			has_duplex	Duplex supported (<ESC>&l<duplex>S)
+			has_papersize	Papersize setting supported (<ESC>&l<sizecode>A)
+			has_copies	Number of copies supported (<ESC>&l<copies>X)
+			is_ljet4pjl	Disable/Enable HP 4PJL model-specific output
+			is_oce9050	Disable/Enable Oce 9050 model-specific output
+	*/
+	FZ_FUNCTION void fz_init_pcl_options(const FzPclOptions& opts);
+
+	/** Class-aware wrapper for `::fz_init_pclm_options()`.  */
+	/**
+		Parse PCLm options.
+	
+		Currently defined options and values are as follows:
+	
+			compression=none: No compression
+			compression=flate: Flate compression
+			strip-height=n: Strip height (default 16)
+	*/
+	FZ_FUNCTION void fz_init_pclm_options(const FzPclmOptions& opts);
+
+	/** Class-aware wrapper for `::fz_init_pdfocr_options()`.  */
+	/**
+		Parse PDFOCR options.
+	
+		Currently defined options and values are as follows:
+	
+			compression=none: No compression
+			compression=flate: Flate compression
+			strip-height=n: Strip height (default 16)
+			ocr-language=<lang>: OCR Language (default eng)
+			ocr-datadir=<datadir>: OCR data path (default rely on TESSDATA_PREFIX)
+	*/
+	FZ_FUNCTION void fz_init_pdfocr_options(FzPdfocrOptions& opts);
+
+	/** Class-aware wrapper for `::fz_init_pwg_options()`.  */
+	/**
+		Init pwg options to a sensible default.
+	*/
+	FZ_FUNCTION void fz_init_pwg_options(FzPwgOptions& opts);
+
+	/** Class-aware wrapper for `::fz_init_search_options()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_init_search_options()` => ::fz_search_options options
+	 */
+	FZ_FUNCTION void fz_init_search_options(::fz_search_options *options);
+
+	/** Class-aware wrapper for `::fz_init_stext_options()`.  */
+	FZ_FUNCTION void fz_init_stext_options(FzStextOptions& opts);
+
+	/** Class-aware wrapper for `::fz_init_svg_device_options()`.  */
+	FZ_FUNCTION void fz_init_svg_device_options(const FzSvgDeviceOptions& opts);
 
 	/** Class-aware wrapper for `::fz_init_text_decoder()`.  */
 	FZ_FUNCTION void fz_init_text_decoder(const FzTextDecoder& dec, const char *encoding);
@@ -3689,6 +3852,100 @@ namespace mupdf
 	 */
 	FZ_FUNCTION const unsigned char *fz_lookup_noto_symbol2_font(int *len);
 
+	/** Class-aware wrapper for `::fz_lookup_option()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_lookup_option(::fz_options *options, const char *key)` => `(int, const char *val)`
+	 */
+	/**
+		Check to see if a key is present in the options object.
+	
+		If it is not, then return 0.
+	
+		If val is non-NULL, *val will be updated to point to the value.
+	
+		The option will be recorded as having been accessed.
+	*/
+	FZ_FUNCTION int fz_lookup_option(const FzOptions& options, const char *key, const char **val);
+
+	/** Class-aware wrapper for `::fz_lookup_option_boolean()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_lookup_option_boolean(::fz_options *options, const char *key)` => `(int, int x)`
+	 */
+	/**
+		Check to see if a key is present, and is true or false.
+	
+		If it is absent, return 0.
+	
+		If it is true (empty, 1, yes, true, or enabled), *x is assigned 1,
+		the invalid flag is cleared, marked as accessed, returns 1.
+	
+		If it is false (0, no, false, or disabled), *x is assigned 0,
+		the invalid flag is clear, marked as accessed, returns 0.
+	
+		If it is any other value, it is marked as invalid, returns -1.
+	*/
+	FZ_FUNCTION int fz_lookup_option_boolean(const FzOptions& options, const char *key, int *x);
+
+	/** Class-aware wrapper for `::fz_lookup_option_enum()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_lookup_option_enum(::fz_options *options, const char *key, const ::fz_option_enums *enum_list)` => `(int, int x)`
+	 */
+	FZ_FUNCTION int fz_lookup_option_enum(const FzOptions& options, const char *key, int *x, const FzOptionEnums& enum_list);
+
+	/** Class-aware wrapper for `::fz_lookup_option_float()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_lookup_option_float(::fz_options *options, const char *key)` => `(int, float x)`
+	 */
+	/**
+		Check to see if an option is present and is of the given type.
+	
+		If an option is absent, this returns 0.
+	
+		If an option is present, but not of the required type, it will be
+		flagged internally as being invalid, and we will return -1.
+	
+		If an option is present, and of the required type, any previously
+		set invalid flag will be cleared.
+	
+		This means we can (for example) lookup an option as an enum, and then
+		safely look for it being an integer if that fails.
+	*/
+	FZ_FUNCTION int fz_lookup_option_float(const FzOptions& options, const char *key, float *x);
+
+	/** Class-aware wrapper for `::fz_lookup_option_integer()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_lookup_option_integer(::fz_options *options, const char *key)` => `(int, int x)`
+	 */
+	FZ_FUNCTION int fz_lookup_option_integer(const FzOptions& options, const char *key, int *x);
+
+	/** Class-aware wrapper for `::fz_lookup_option_unsigned()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_lookup_option_unsigned(::fz_options *options, const char *key)` => `(int, unsigned int x)`
+	 */
+	FZ_FUNCTION int fz_lookup_option_unsigned(const FzOptions& options, const char *key, unsigned int *x);
+
+	/** Class-aware wrapper for `::fz_lookup_option_yes()`.  */
+	/**
+		Check to see if a key is a boolean.
+	
+		If it is absent, return 0.
+	
+		If it is true (empty, 1, yes, true, or enabled), returns 1,
+		clears any invalid flag, and counts as accessed.
+	
+		If it is false (0, no, false, or disabled), returns 0,
+		clears any invalid flag, and counts as accessed.
+	
+		If it is absent, or any other value, it is marked as invalid, returns 0.
+	*/
+	FZ_FUNCTION int fz_lookup_option_yes(const FzOptions& options, const char *key);
+
 	/** Class-aware wrapper for `::fz_lookup_rendering_intent()`.  */
 	/**
 		Map from (case sensitive) rendering intent string to enumeration
@@ -3756,6 +4013,9 @@ namespace mupdf
 		Block must be freed later using fz_free_aligned.
 	*/
 	FZ_FUNCTION void *fz_malloc_aligned(size_t size, int align);
+
+	/** Class-aware wrapper for `::fz_malloc_array_imp()`.  */
+	FZ_FUNCTION void *fz_malloc_array_imp(size_t nmemb, size_t size);
 
 	/** Class-aware wrapper for `::fz_malloc_no_throw()`.  */
 	/**
@@ -4384,6 +4644,34 @@ namespace mupdf
 	is not available because returned wrapper class for `fz_document_writer`
 	is non-copyable. */
 
+	/** Class-aware wrapper for `::fz_new_culling_device()`.  */
+	/**
+		Create an 'cull' device.
+	
+		This device passes through all calls to the 'passthrough' device, except
+		for text operations that may be culled.
+	
+		The decision as to whether to cull a glyph or not is made by calling the
+		'cull_glyph' function in the options structure with the rectangle that
+		would be affected. If the function returns 0, the glyph is passed through.
+		if the function returns 1, the glyph is dropped. All other values reserved.
+	*/
+	FZ_FUNCTION FzDevice fz_new_culling_device(const FzDevice& passthrough, const FzCullingOptions& opts);
+
+	/** Class-aware wrapper for `::fz_new_culling_device_with_rects()`.  */
+	/**
+		Create an culling device that will drop any glyphs that significantly
+		overlap any of the given list of rects.
+	
+		The rect list is copied into the device, so does not need to exist
+		beyond this call.
+	*/
+	FZ_FUNCTION FzDevice fz_new_culling_device_with_rects(const FzDevice& passthrough, int n, FzRect& rects);
+
+	/** Class-aware wrapper for `::fz_new_culling_device_with_rects2()`.  */
+	/** Swig-friendly wrapper for fz_new_culling_device_with_rects(). */
+	FZ_FUNCTION FzDevice fz_new_culling_device_with_rects2(const FzDevice& passthrough, const std::vector<fz_rect> &rects);
+
 	/** Class-aware wrapper for `::fz_new_default_colorspaces()`.  */
 	/**
 		Create a new default colorspace structure with values inherited
@@ -4863,10 +5151,12 @@ namespace mupdf
 		size: The size of the required allocated structure (the size of
 		the derived structure).
 	
-		get: The function to be called to obtain a decoded pixmap.
+		get_pixmap: The function to be called to obtain a decoded pixmap.
 	
 		get_size: The function to be called to return the storage size
 		used by this image.
+	
+		get_digest: The function to be called to compute a checksum from this image.
 	
 		drop: The function to be called to dispose of this image once
 		the last reference is dropped.
@@ -4875,7 +5165,7 @@ namespace mupdf
 		with the first sizeof(fz_image) bytes initialised as appropriate
 		given the supplied parameters, and the other bytes set to zero.
 	*/
-	FZ_FUNCTION FzImage fz_new_image_of_size(int w, int h, int bpc, const FzColorspace& colorspace, int xres, int yres, int interpolate, int imagemask, const float *decode, const int *colorkey, const FzImage& mask, size_t size, ::fz_image_get_pixmap_fn *get_pixmap, ::fz_image_get_size_fn *get_size, ::fz_drop_image_fn *drop);
+	FZ_FUNCTION FzImage fz_new_image_of_size(int w, int h, int bpc, const FzColorspace& colorspace, int xres, int yres, int interpolate, int imagemask, const float *decode, const int *colorkey, const FzImage& mask, size_t size, ::fz_image_get_pixmap_fn *get_pixmap, ::fz_image_get_size_fn *get_size, ::fz_image_get_digest_fn *get_digest, ::fz_drop_image_fn *drop);
 
 	/** Class-aware wrapper for `::fz_new_indexed_colorspace()`.  */
 	/**
@@ -5001,7 +5291,7 @@ namespace mupdf
 	FZ_FUNCTION FzDevice fz_new_ocr_device(const FzDevice& target, const FzMatrix& ctm, const FzRect& mediabox, int with_list, const char *language, const char *datadir, int (*progress)(::fz_context *, void *, int ), void *progress_arg);
 
 	/** Class-aware wrapper for `::fz_new_ocr_device_with_options()`.  */
-	FZ_FUNCTION FzDevice fz_new_ocr_device_with_options(const FzDevice& target, const FzMatrix& ctm, const FzRect& mediabox, int with_list, const char *language, const char *datadir, int (*progress)(::fz_context *, void *, int ), void *progress_arg, const char *options);
+	FZ_FUNCTION FzDevice fz_new_ocr_device_with_options(const FzDevice& target, const FzMatrix& ctm, const FzRect& mediabox, int with_list, const char *language, const char *datadir, int (*progress)(::fz_context *, void *, int ), void *progress_arg, const FzOptions& options);
 
 	/* Class-aware wrapper for `fz_new_odt_writer()`
 	is not available because returned wrapper class for `fz_document_writer`
@@ -5010,6 +5300,14 @@ namespace mupdf
 	/* Class-aware wrapper for `fz_new_odt_writer_with_output()`
 	is not available because returned wrapper class for `fz_document_writer`
 	is non-copyable. */
+
+	/** Class-aware wrapper for `::fz_new_options()`.  */
+	/**
+		Create an options object, with the initial contents parsed from the string.
+		See fz_parse_options for details on the string parsing.
+		If the string is NULL, the options object will be initialized but empty.
+	*/
+	FZ_FUNCTION FzOptions fz_new_options(const char *option_string);
 
 	/** Class-aware wrapper for `::fz_new_outline()`.  */
 	/**
@@ -5057,6 +5355,19 @@ namespace mupdf
 	/* Class-aware wrapper for `fz_new_pam_pixmap_writer()`
 	is not available because returned wrapper class for `fz_document_writer`
 	is non-copyable. */
+
+	/** Class-aware wrapper for `::fz_new_passthrough_device_of_size()`.  */
+	/**
+		Create a passthrough device.
+	
+		The device is created with stub functions that do nothing except
+		pass calls through to the given sub device. This includes
+		close and drop!
+	
+		The caller of this function can then override any functions it
+		wants to handle itself.
+	*/
+	FZ_FUNCTION FzDevice fz_new_passthrough_device_of_size(const FzDevice& passthrough, int size);
 
 	/** Class-aware wrapper for `::fz_new_path()`.  */
 	/**
@@ -5145,6 +5456,15 @@ namespace mupdf
 	/** Class-aware wrapper for `::fz_new_pixmap_from_color_and_mask()`.  */
 	FZ_FUNCTION FzPixmap fz_new_pixmap_from_color_and_mask(const FzPixmap& color, const FzPixmap& mask);
 
+	/** Class-aware wrapper for `::fz_new_pixmap_from_culled_display_list()`.  */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_culled_display_list(const FzDisplayList& list, const FzMatrix& ctm, const FzColorspace& cs, int alpha, const FzCullingOptions& opts);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_culled_page()`.  */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_culled_page(const FzPage& page, const FzMatrix& ctm, const FzColorspace& cs, int alpha, const FzCullingOptions& opts);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_culled_page_number()`.  */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_culled_page_number(const FzDocument& doc, int number, const FzMatrix& ctm, const FzColorspace& cs, int alpha, const FzCullingOptions& opts);
+
 	/** Class-aware wrapper for `::fz_new_pixmap_from_display_list()`.  */
 	/**
 		Render the page to a pixmap using the transform and colorspace.
@@ -5152,6 +5472,20 @@ namespace mupdf
 		Ownership of the pixmap is returned to the caller.
 	*/
 	FZ_FUNCTION FzPixmap fz_new_pixmap_from_display_list(const FzDisplayList& list, const FzMatrix& ctm, const FzColorspace& cs, int alpha);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_display_list_culling_text()`.  */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_display_list_culling_text(const FzDisplayList& list, const FzMatrix& ctm, const FzColorspace& cs, int alpha, int n, FzRect& rects);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_display_list_culling_text2()`.  */
+	/** Swig-friendly wrapper for fz_new_pixmap_from_display_list_culling_text(). */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_display_list_culling_text2(const FzDisplayList& list, const FzMatrix& ctm, const FzColorspace& cs, int alpha, const std::vector<fz_rect> &rects);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_display_list_culling_text_etc()`.  */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_display_list_culling_text_etc(const FzDisplayList& list, const FzMatrix& ctm, const FzColorspace& cs, int alpha, int n, FzRect& rects, float borders);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_display_list_culling_text_etc2()`.  */
+	/** Swig-friendly wrapper for fz_new_pixmap_from_display_list_culling_text_etc(). */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_display_list_culling_text_etc2(const FzDisplayList& list, const FzMatrix& ctm, const FzColorspace& cs, int alpha, const std::vector<fz_rect> &rects, float borders);
 
 	/** Class-aware wrapper for `::fz_new_pixmap_from_display_list_with_separations()`.  */
 	/**
@@ -5175,8 +5509,39 @@ namespace mupdf
 	/** Class-aware wrapper for `::fz_new_pixmap_from_page_contents_with_separations()`.  */
 	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_contents_with_separations(const FzPage& page, const FzMatrix& ctm, const FzColorspace& cs, const FzSeparations& seps, int alpha);
 
+	/** Class-aware wrapper for `::fz_new_pixmap_from_page_culling_text()`.  */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_culling_text(const FzPage& page, const FzMatrix& ctm, const FzColorspace& cs, int alpha, int n, FzRect& rects);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_page_culling_text2()`.  */
+	/** Swig-friendly wrapper for fz_new_pixmap_from_page_culling_text(). */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_culling_text2(const FzPage& page, const FzMatrix& ctm, const FzColorspace& cs, int alpha, const std::vector<fz_rect> &rects);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_page_culling_text_etc()`.  */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_culling_text_etc(const FzPage& page, const FzMatrix& ctm, const FzColorspace& cs, int alpha, int n, FzRect& rects, float borders);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_page_culling_text_etc2()`.  */
+	/** Swig-friendly wrapper for fz_new_pixmap_from_page_culling_text_etc(). */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_culling_text_etc2(const FzPage& page, const FzMatrix& ctm, const FzColorspace& cs, int alpha, const std::vector<fz_rect> &rects, float borders);
+
 	/** Class-aware wrapper for `::fz_new_pixmap_from_page_number()`.  */
 	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_number(const FzDocument& doc, int number, const FzMatrix& ctm, const FzColorspace& cs, int alpha);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_page_number_culling_text()`.  */
+	/**
+		Returns a page rendered with text from the given rectangles culled.
+	*/
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_number_culling_text(const FzDocument& doc, int number, const FzMatrix& ctm, const FzColorspace& cs, int alpha, int n, FzRect& rects);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_page_number_culling_text2()`.  */
+	/** Swig-friendly wrapper for fz_new_pixmap_from_page_number_culling_text(). */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_number_culling_text2(const FzDocument& doc, int number, const FzMatrix& ctm, const FzColorspace& cs, int alpha, const std::vector<fz_rect> &rects);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_page_number_culling_text_etc()`.  */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_number_culling_text_etc(const FzDocument& doc, int number, const FzMatrix& ctm, const FzColorspace& cs, int alpha, int n, FzRect& rects, float borders);
+
+	/** Class-aware wrapper for `::fz_new_pixmap_from_page_number_culling_text_etc2()`.  */
+	/** Swig-friendly wrapper for fz_new_pixmap_from_page_number_culling_text_etc(). */
+	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_number_culling_text_etc2(const FzDocument& doc, int number, const FzMatrix& ctm, const FzColorspace& cs, int alpha, const std::vector<fz_rect> &rects, float borders);
 
 	/** Class-aware wrapper for `::fz_new_pixmap_from_page_number_with_separations()`.  */
 	FZ_FUNCTION FzPixmap fz_new_pixmap_from_page_number_with_separations(const FzDocument& doc, int number, const FzMatrix& ctm, const FzColorspace& cs, const FzSeparations& seps, int alpha);
@@ -6242,16 +6607,6 @@ namespace mupdf
 	*/
 	FZ_FUNCTION int fz_opt_from_list(char *opt, const char *optlist);
 
-	/** Class-aware wrapper for `::fz_option_eq()`.  */
-	/**
-		Check to see if an option, a, from a string matches a reference
-		option, b.
-	
-		(i.e. a could be 'foo' or 'foo,bar...' etc, but b can only be
-		'foo'.)
-	*/
-	FZ_FUNCTION int fz_option_eq(const char *a, const char *b);
-
 	/** Class-aware wrapper for `::fz_optpath()`.  */
 	/**
 		Convert "-" to "/dev/stdout" for use with command lines.
@@ -6336,6 +6691,18 @@ namespace mupdf
 	*/
 	FZ_FUNCTION int fz_overlaps_rect(const FzRect& a, const FzRect& b);
 
+	/** Class-aware wrapper for `::fz_pack_double()`.  */
+	FZ_FUNCTION void fz_pack_double(uint8_t *p, double x);
+
+	/** Class-aware wrapper for `::fz_pack_double_le()`.  */
+	FZ_FUNCTION void fz_pack_double_le(uint8_t *p, double x);
+
+	/** Class-aware wrapper for `::fz_pack_float()`.  */
+	FZ_FUNCTION void fz_pack_float(uint8_t *p, float x);
+
+	/** Class-aware wrapper for `::fz_pack_float_le()`.  */
+	FZ_FUNCTION void fz_pack_float_le(uint8_t *p, float x);
+
 	/** Class-aware wrapper for `::fz_pack_path()`.  */
 	/**
 		Pack a path into the given block.
@@ -6370,6 +6737,24 @@ namespace mupdf
 		forget about the details.
 	*/
 	FZ_FUNCTION size_t fz_pack_path(uint8_t *pack, const FzPath& path);
+
+	/** Class-aware wrapper for `::fz_pack_uint16()`.  */
+	FZ_FUNCTION void fz_pack_uint16(uint8_t *p, uint16_t x);
+
+	/** Class-aware wrapper for `::fz_pack_uint16_le()`.  */
+	FZ_FUNCTION void fz_pack_uint16_le(uint8_t *p, uint16_t x);
+
+	/** Class-aware wrapper for `::fz_pack_uint32()`.  */
+	FZ_FUNCTION void fz_pack_uint32(uint8_t *p, uint32_t x);
+
+	/** Class-aware wrapper for `::fz_pack_uint32_le()`.  */
+	FZ_FUNCTION void fz_pack_uint32_le(uint8_t *p, uint32_t x);
+
+	/** Class-aware wrapper for `::fz_pack_uint64()`.  */
+	FZ_FUNCTION void fz_pack_uint64(uint8_t *p, uint64_t x);
+
+	/** Class-aware wrapper for `::fz_pack_uint64_le()`.  */
+	FZ_FUNCTION void fz_pack_uint64_le(uint8_t *p, uint64_t x);
 
 	/** Class-aware wrapper for `::fz_packed_path_size()`.  */
 	/**
@@ -6471,6 +6856,24 @@ namespace mupdf
 	is not available because returned wrapper class for `fz_json`
 	is non-copyable. */
 
+	/** Class-aware wrapper for `::fz_parse_options()`.  */
+	/**
+		Parse more options from an options string, and add them to
+		an existing fz_options object.
+	
+		The parser supports three distinct syntaxes (identified by the leading character).
+	
+		- Classic comma separated list of values
+			rotate=90,bbox="0,0,100,100",title="Hello, world!"
+	
+		- URL query string
+			?rotate=90&bbox=0,0,100,100&title=Hello, world!
+	
+		- A single JSON object -- no nested objects (except arrays of numbers)
+			{"rotate":90,"bbox":[0,0,100,100],"title":"Hello, world!"}
+	*/
+	FZ_FUNCTION void fz_parse_options(const FzOptions& options, const char *option_string);
+
 	/** Class-aware wrapper for `::fz_parse_page_range()`.
 	
 	This function has out-params. Python/C# wrappers look like:
@@ -6487,26 +6890,27 @@ namespace mupdf
 	is non-copyable. */
 
 	/** Class-aware wrapper for `::fz_parse_pdfocr_options()`.  */
-	/**
-		Parse PDFOCR options.
-	
-		Currently defined options and values are as follows:
-	
-			compression=none: No compression
-			compression=flate: Flate compression
-			strip-height=n: Strip height (default 16)
-			ocr-language=<lang>: OCR Language (default eng)
-			ocr-datadir=<datadir>: OCR data path (default rely on TESSDATA_PREFIX)
-	*/
 	FZ_FUNCTION FzPdfocrOptions fz_parse_pdfocr_options(FzPdfocrOptions& opts, const char *args);
 
-	/** Class-aware wrapper for `::fz_parse_search_options()`.  */
-	FZ_FUNCTION ::fz_search_options fz_parse_search_options(const char *options);
+	/** Class-aware wrapper for `::fz_parse_pwg_options()`.  */
+	/**
+		Initialise a pwg options struct, and parse the given options string.
+	*/
+	FZ_FUNCTION FzPwgOptions fz_parse_pwg_options(FzPwgOptions& opts, const char *args);
+
+	/** Class-aware wrapper for `::fz_parse_search_options()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_parse_search_options(const char *args)` => `(fz_search_options *, ::fz_search_options options)`
+	 */
+	FZ_FUNCTION ::fz_search_options *fz_parse_search_options(::fz_search_options *options, const char *args);
 
 	/** Class-aware wrapper for `::fz_parse_stext_options()`.  */
 	/**
 		Parse stext device options from a comma separated key-value
 		string.
+	
+		This initialises the opts structure.
 	*/
 	FZ_FUNCTION FzStextOptions fz_parse_stext_options(FzStextOptions& opts, const char *string);
 
@@ -6790,6 +7194,12 @@ namespace mupdf
 	*/
 	FZ_FUNCTION char *fz_pool_strdup(const FzPool& pool, const char *s);
 
+	/** Class-aware wrapper for `::fz_pool_strndup()`.  */
+	/**
+		strndup equivalent allocating from the pool.
+	*/
+	FZ_FUNCTION char *fz_pool_strndup(const FzPool& pool, const char *s, size_t n);
+
 	/** Class-aware wrapper for `::fz_pop_clip()`.  */
 	FZ_FUNCTION void fz_pop_clip(const FzDevice& dev);
 
@@ -6921,6 +7331,9 @@ namespace mupdf
 	*/
 	FZ_FUNCTION void fz_print_stext_page_as_xml(const FzOutput& out, const FzStextPage& page, int id);
 
+	/** Class-aware wrapper for `::fz_print_stext_page_as_xml_with_flags()`.  */
+	FZ_FUNCTION void fz_print_stext_page_as_xml_with_flags(const FzOutput& out, const FzStextPage& page, int id, ::fz_stext_xml_flags flags);
+
 	/** Class-aware wrapper for `::fz_print_stext_trailer_as_html()`.  */
 	FZ_FUNCTION void fz_print_stext_trailer_as_html(const FzOutput& out);
 
@@ -6932,7 +7345,7 @@ namespace mupdf
 		Iterates over all opened pages of the document, calling the
 		provided callback for each page for processing. If the callback
 		returns non-NULL then the iteration stops and that value is returned
-		to the called of fz_process_opened_pages().
+		to the caller of fz_process_opened_pages().
 	
 		The state pointer provided to fz_process_opened_pages() is
 		passed on to the callback but is owned by the caller.
@@ -6965,6 +7378,24 @@ namespace mupdf
 		to callback functions.
 	*/
 	FZ_FUNCTION void fz_process_shade(const FzShade& shade, const FzMatrix& ctm, const FzRect& scissor, ::fz_shade_prepare_fn *prepare, ::fz_shade_process_fn *process, void *process_arg);
+
+	/** Class-aware wrapper for `::fz_propose_table_within_bounds()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`fz_propose_table_within_bounds(::fz_stext_page *page, ::fz_rect bounds, ::fz_stext_grid_positions **xposp, ::fz_stext_grid_positions **yposp)` => `(int)`
+	 */
+	/**
+		Try to guess at the table structure within given bounds.
+	
+		If no table can be found, we return 0. If we find one we
+		return non-zero. (Currently, 1, other values reserved
+		for the future.)
+	
+		In the case of a non-zero return. xposp and ypos are returned
+		as pointers to fz_stext_grid_positions records that must be
+		freed.
+	*/
+	FZ_FUNCTION int fz_propose_table_within_bounds(const FzStextPage& page, const FzRect& bounds, FzStextGridPositions& xposp, FzStextGridPositions& yposp);
 
 	/** Class-aware wrapper for `::fz_ptr_heap_insert()`.  */
 	FZ_FUNCTION void fz_ptr_heap_insert(const FzPtrHeap& heap, void *v, int (*HEAP_CMP)(void **, void **));
@@ -7168,6 +7599,13 @@ namespace mupdf
 	*/
 	FZ_FUNCTION void fz_read_string(const FzStream& stm, char *buffer, int len);
 
+	/** Class-aware wrapper for `::fz_read_text_file()`.  */
+	/**
+		Read all the contents of a file into a string.
+		File should be UTF-8 encoded plain text.
+	*/
+	FZ_FUNCTION char *fz_read_text_file(const char *filename);
+
 	/** Class-aware wrapper for `::fz_read_uint16()`.  */
 	/**
 		fz_read_[u]int(16|24|32|64)(_le)?
@@ -7228,6 +7666,9 @@ namespace mupdf
 	*/
 	FZ_FUNCTION void *fz_realloc(void *p, size_t size);
 
+	/** Class-aware wrapper for `::fz_realloc_array_imp()`.  */
+	FZ_FUNCTION void *fz_realloc_array_imp(void *p, size_t nmemb, size_t size);
+
 	/** Class-aware wrapper for `::fz_realloc_no_throw()`.  */
 	/**
 		fz_realloc equivalent that returns NULL rather than throwing
@@ -7264,6 +7705,14 @@ namespace mupdf
 		data.
 	*/
 	FZ_FUNCTION int fz_recognize_image_format(unsigned char p[8]);
+
+	/** Class-aware wrapper for `::fz_rect_area()`.  */
+	/**
+		Calculate the area of a rectangle.
+	
+		Always non-negative. All invalid or empty rects return 0.
+	*/
+	FZ_FUNCTION float fz_rect_area(const FzRect& r);
 
 	/** Class-aware wrapper for `::fz_rect_from_irect()`.  */
 	/**
@@ -7863,21 +8312,6 @@ namespace mupdf
 	/** Class-aware wrapper for `::fz_search_page_number_cb()`.  */
 	FZ_FUNCTION int fz_search_page_number_cb(const FzDocument& doc, int number, const char *needle, ::fz_search_callback_fn *cb, void *opaque);
 
-	/** Class-aware wrapper for `::fz_search_set_options()`.  */
-	/**
-		Change the options/needle to be used for a search.
-	
-		If the needle is invalid (in the case of regexps, it fails to compile)
-		it will throw an error.
-	
-		If the needle changes, the current position of the search within the
-		text is kept.
-	
-		If the options change, the search position may revert to the beginning
-		of the current page.
-	*/
-	FZ_FUNCTION void fz_search_set_options(const FzSearch& search, ::fz_search_options options, const char *needle);
-
 	/** Class-aware wrapper for `::fz_search_stext_page()`.
 	
 	This function has out-params. Python/C# wrappers look like:
@@ -8362,9 +8796,6 @@ namespace mupdf
 	/** Class-aware wrapper for `::fz_snap_selection()`.  */
 	FZ_FUNCTION FzQuad fz_snap_selection(const FzStextPage& page, FzPoint& ap, FzPoint& bp, int mode);
 
-	/** Class-aware wrapper for `::fz_start_throw_on_repair()`.  */
-	FZ_FUNCTION void fz_start_throw_on_repair();
-
 	/** Class-aware wrapper for `::fz_stat_ctime()`.  */
 	FZ_FUNCTION int64_t fz_stat_ctime(const char *path);
 
@@ -8391,6 +8822,22 @@ namespace mupdf
 	is not available because returned wrapper class for `fz_stext_page_block_iterator`
 	is non-copyable. */
 
+	/* Class-aware wrapper for `fz_stext_page_block_iterator_begin_from()`
+	is not available because returned wrapper class for `fz_stext_page_block_iterator`
+	is non-copyable. */
+
+	/* Class-aware wrapper for `fz_stext_page_block_iterator_begin_from_dfs()`
+	is not available because returned wrapper class for `fz_stext_page_block_iterator`
+	is non-copyable. */
+
+	/* Class-aware wrapper for `fz_stext_page_block_iterator_begin_from_rdfs()`
+	is not available because returned wrapper class for `fz_stext_page_block_iterator`
+	is non-copyable. */
+
+	/* Class-aware wrapper for `fz_stext_page_block_iterator_begin_rdfs()`
+	is not available because returned wrapper class for `fz_stext_page_block_iterator`
+	is non-copyable. */
+
 	/* Class-aware wrapper for `fz_stext_page_block_iterator_down()`
 	is not available because returned wrapper class for `fz_stext_page_block_iterator`
 	is non-copyable. */
@@ -8401,11 +8848,18 @@ namespace mupdf
 	/** Class-aware wrapper for `::fz_stext_page_block_iterator_eod_dfs()`.  */
 	FZ_FUNCTION int fz_stext_page_block_iterator_eod_dfs(const FzStextPageBlockIterator& pos);
 
+	/** Class-aware wrapper for `::fz_stext_page_block_iterator_eod_rdfs()`.  */
+	FZ_FUNCTION int fz_stext_page_block_iterator_eod_rdfs(const FzStextPageBlockIterator& pos);
+
 	/* Class-aware wrapper for `fz_stext_page_block_iterator_next()`
 	is not available because returned wrapper class for `fz_stext_page_block_iterator`
 	is non-copyable. */
 
 	/* Class-aware wrapper for `fz_stext_page_block_iterator_next_dfs()`
+	is not available because returned wrapper class for `fz_stext_page_block_iterator`
+	is non-copyable. */
+
+	/* Class-aware wrapper for `fz_stext_page_block_iterator_next_rdfs()`
 	is not available because returned wrapper class for `fz_stext_page_block_iterator`
 	is non-copyable. */
 
@@ -8688,6 +9142,15 @@ namespace mupdf
 	*/
 	FZ_FUNCTION int fz_strverscmp(const char *s1, const char *s2);
 
+	/** Class-aware wrapper for `::fz_style_document()`.  */
+	/**
+		Style reflowable document types.
+	
+		publisher_css: Whether to respect the publisher's styles or not.
+		user_css: Custom stylesheet to apply.
+	*/
+	FZ_FUNCTION void fz_style_document(const FzDocument& doc, int publisher_css, const char *user_css);
+
 	/** Class-aware wrapper for `::fz_subpixel_adjust()`.  */
 	/**
 		Perform subpixel quantisation and adjustment on a glyph matrix.
@@ -8794,6 +9257,17 @@ namespace mupdf
 		accepted.
 	*/
 	FZ_FUNCTION ::fz_text_language fz_text_language_from_string(const char *str);
+
+	/** Class-aware wrapper for `::fz_throw_on_unused_options()`.  */
+	/**
+		Throw for any options being unused or invalid.
+	
+		Either this, or fz_warn_on_unused_options should always be called
+		(in non-error cases at least) before dropping options.
+	
+		Returns 0 if OK, non-zero otherwise.
+	*/
+	FZ_FUNCTION void fz_throw_on_unused_options(const FzOptions& options, const char *prefix);
 
 	/** Class-aware wrapper for `::fz_tint_pixmap()`.  */
 	/**
@@ -9062,6 +9536,9 @@ namespace mupdf
 	*/
 	FZ_FUNCTION void fz_tune_image_decode(::fz_tune_image_decode_fn *image_decode, void *arg);
 
+	/** Class-aware wrapper for `::fz_tune_image_rendering()`.  */
+	FZ_FUNCTION void fz_tune_image_rendering(int behavior);
+
 	/** Class-aware wrapper for `::fz_tune_image_scale()`.  */
 	/**
 		Set the tuning function to use for
@@ -9098,8 +9575,59 @@ namespace mupdf
 	*/
 	FZ_FUNCTION void fz_unlock(int lock);
 
+	/** Class-aware wrapper for `::fz_unpack_double()`.  */
+	FZ_FUNCTION double fz_unpack_double(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_double_le()`.  */
+	FZ_FUNCTION double fz_unpack_double_le(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_float()`.  */
+	FZ_FUNCTION float fz_unpack_float(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_float_le()`.  */
+	FZ_FUNCTION float fz_unpack_float_le(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_int16()`.  */
+	FZ_FUNCTION int16_t fz_unpack_int16(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_int16_le()`.  */
+	FZ_FUNCTION int16_t fz_unpack_int16_le(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_int32()`.  */
+	FZ_FUNCTION int32_t fz_unpack_int32(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_int32_le()`.  */
+	FZ_FUNCTION int32_t fz_unpack_int32_le(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_int64()`.  */
+	FZ_FUNCTION int64_t fz_unpack_int64(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_int64_le()`.  */
+	FZ_FUNCTION int64_t fz_unpack_int64_le(const uint8_t *p);
+
 	/** Class-aware wrapper for `::fz_unpack_stream()`.  */
 	FZ_FUNCTION FzStream fz_unpack_stream(const FzStream& src, int depth, int w, int h, int n, int indexed, int pad, int skip);
+
+	/** Class-aware wrapper for `::fz_unpack_uint16()`.  */
+	/**
+		Bit unpacking.
+	*/
+	FZ_FUNCTION uint16_t fz_unpack_uint16(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_uint16_le()`.  */
+	FZ_FUNCTION uint16_t fz_unpack_uint16_le(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_uint32()`.  */
+	FZ_FUNCTION uint32_t fz_unpack_uint32(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_uint32_le()`.  */
+	FZ_FUNCTION uint32_t fz_unpack_uint32_le(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_uint64()`.  */
+	FZ_FUNCTION uint64_t fz_unpack_uint64(const uint8_t *p);
+
+	/** Class-aware wrapper for `::fz_unpack_uint64_le()`.  */
+	FZ_FUNCTION uint64_t fz_unpack_uint64_le(const uint8_t *p);
 
 	/** Class-aware wrapper for `::fz_unread_byte()`.  */
 	/**
@@ -9180,8 +9708,19 @@ namespace mupdf
 	*/
 	FZ_FUNCTION int fz_utflen(const char *s);
 
+	/** Class-aware wrapper for `::fz_validate_options()`.  */
+	/**
+		This should be called by any consumer of options after it has looked up
+		the options it understands. This will throw if any options were found to
+		be flagged as being invalid.
+	*/
+	FZ_FUNCTION void fz_validate_options(const FzOptions& options, const char *prefix);
+
 	/** Class-aware wrapper for `::fz_var_imp()`.  */
 	FZ_FUNCTION void fz_var_imp(void *arg_0);
+
+	/** Class-aware wrapper for `::fz_verify_stext_page()`.  */
+	FZ_FUNCTION void fz_verify_stext_page(const FzStextPage& page, const char *title);
 
 	/** Class-aware wrapper for `::fz_vlog_error_printf()`.  */
 	FZ_FUNCTION void fz_vlog_error_printf(const char *fmt, va_list ap);
@@ -9232,6 +9771,17 @@ namespace mupdf
 
 	/** Class-aware wrapper for `::fz_warn()`.  */
 	FZ_FUNCTION void fz_warn(const char *fmt, ...);
+
+	/** Class-aware wrapper for `::fz_warn_on_unused_options()`.  */
+	/**
+		Warn for any options being unused. Throw if any options are invalid.
+	
+		Either this, or fz_throw_on_unused_options should always be called
+		(in non-error cases at least) before dropping options.
+	
+		Returns 0 if OK, non-zero otherwise.
+	*/
+	FZ_FUNCTION void fz_warn_on_unused_options(const FzOptions& options, const char *prefix);
 
 	/** Class-aware wrapper for `::fz_warning_callback()`.
 	
@@ -10004,6 +10554,9 @@ namespace mupdf
 	/** Class-aware wrapper for `::pdf_annot_has_icon_name()`.  */
 	FZ_FUNCTION int pdf_annot_has_icon_name(const PdfAnnot& annot);
 
+	/** Class-aware wrapper for `::pdf_annot_has_in_reply_to()`.  */
+	FZ_FUNCTION int pdf_annot_has_in_reply_to(const PdfAnnot& annot);
+
 	/** Class-aware wrapper for `::pdf_annot_has_ink_list()`.  */
 	FZ_FUNCTION int pdf_annot_has_ink_list(const PdfAnnot& annot);
 
@@ -10039,6 +10592,9 @@ namespace mupdf
 
 	/** Class-aware wrapper for `::pdf_annot_has_rich_defaults()`.  */
 	FZ_FUNCTION int pdf_annot_has_rich_defaults(const PdfAnnot& annot);
+
+	/** Class-aware wrapper for `::pdf_annot_has_subject()`.  */
+	FZ_FUNCTION int pdf_annot_has_subject(const PdfAnnot& annot);
 
 	/** Class-aware wrapper for `::pdf_annot_has_vertices()`.  */
 	FZ_FUNCTION int pdf_annot_has_vertices(const PdfAnnot& annot);
@@ -10114,6 +10670,9 @@ namespace mupdf
 	/** Class-aware wrapper for `::pdf_annot_modification_date()`.  */
 	FZ_FUNCTION int64_t pdf_annot_modification_date(const PdfAnnot& annot);
 
+	/** Class-aware wrapper for `::pdf_annot_name()`.  */
+	FZ_FUNCTION const char *pdf_annot_name(const PdfAnnot& annot);
+
 	/** Class-aware wrapper for `::pdf_annot_needs_resynthesis()`.  */
 	FZ_FUNCTION int pdf_annot_needs_resynthesis(const PdfAnnot& annot);
 
@@ -10165,6 +10724,9 @@ namespace mupdf
 	/** Class-aware wrapper for `::pdf_annot_stamp_image_obj()`.  */
 	FZ_FUNCTION PdfObj pdf_annot_stamp_image_obj(const PdfAnnot& annot);
 
+	/** Class-aware wrapper for `::pdf_annot_subject()`.  */
+	FZ_FUNCTION const char *pdf_annot_subject(const PdfAnnot& annot);
+
 	/** Class-aware wrapper for `::pdf_annot_transform()`.  */
 	FZ_FUNCTION FzMatrix pdf_annot_transform(const PdfAnnot& annot);
 
@@ -10191,6 +10753,9 @@ namespace mupdf
 
 	/** Class-aware wrapper for `::pdf_apply_redaction()`.  */
 	FZ_FUNCTION int pdf_apply_redaction(const PdfAnnot& annot, PdfRedactOptions& opts);
+
+	/** Class-aware wrapper for `::pdf_apply_write_options()`.  */
+	FZ_FUNCTION void pdf_apply_write_options(PdfWriteOptions& opts, const FzOptions& args);
 
 	/** Class-aware wrapper for `::pdf_array_contains()`.  */
 	FZ_FUNCTION int pdf_array_contains(const PdfObj& array, const PdfObj& obj);
@@ -10339,7 +10904,10 @@ namespace mupdf
 	FZ_FUNCTION ::pdf_signature_error pdf_check_digest(const PdfPkcs7Verifier& verifier, const PdfDocument& doc, const PdfObj& signature);
 
 	/** Class-aware wrapper for `::pdf_check_document()`.  */
-	FZ_FUNCTION void pdf_check_document(const PdfDocument& doc);
+	FZ_FUNCTION int pdf_check_document(const PdfDocument& doc);
+
+	/** Class-aware wrapper for `::pdf_check_structure_tree()`.  */
+	FZ_FUNCTION ::pdf_check_structure_result pdf_check_structure_tree(const PdfDocument& doc);
 
 	/** Class-aware wrapper for `::pdf_check_widget_certificate()`.  */
 	FZ_FUNCTION ::pdf_signature_error pdf_check_widget_certificate(const PdfPkcs7Verifier& verifier, const PdfAnnot& widget);
@@ -10822,8 +11390,14 @@ namespace mupdf
 	/** Class-aware wrapper for `::pdf_end_operation()`.  */
 	FZ_FUNCTION void pdf_end_operation(const PdfDocument& doc);
 
+	/** Class-aware wrapper for `::pdf_end_throw_on_repair()`.  */
+	FZ_FUNCTION void pdf_end_throw_on_repair(const PdfDocument& doc, int xref_base);
+
 	/** Class-aware wrapper for `::pdf_end_vmtx()`.  */
 	FZ_FUNCTION void pdf_end_vmtx(const PdfFontDesc& font);
+
+	/** Class-aware wrapper for `::pdf_ensure_indirect()`.  */
+	FZ_FUNCTION PdfObj pdf_ensure_indirect(const PdfObj& obj);
 
 	/** Class-aware wrapper for `::pdf_ensure_solid_xref()`.  */
 	FZ_FUNCTION void pdf_ensure_solid_xref(const PdfDocument& doc, int num);
@@ -10919,6 +11493,9 @@ namespace mupdf
 
 	/** Class-aware wrapper for `::pdf_find_font_resource()`.  */
 	FZ_FUNCTION PdfObj pdf_find_font_resource(const PdfDocument& doc, int type, int encoding, const FzFont& item, const PdfFontResourceKey& key);
+
+	/** Class-aware wrapper for `::pdf_find_image_resource()`.  */
+	FZ_FUNCTION PdfObj pdf_find_image_resource(const PdfDocument& doc, const FzImage& item, const PdfImageResourceKey& key);
 
 	/** Class-aware wrapper for `::pdf_find_item()`.  */
 	FZ_FUNCTION void *pdf_find_item(::fz_store_drop_fn *drop, const PdfObj& key);
@@ -11023,11 +11600,17 @@ namespace mupdf
 	/** Class-aware wrapper for `::pdf_incremental_change_since_signing_widget()`.  */
 	FZ_FUNCTION int pdf_incremental_change_since_signing_widget(const PdfAnnot& widget);
 
+	/** Class-aware wrapper for `::pdf_init_write_options()`.  */
+	FZ_FUNCTION void pdf_init_write_options(PdfWriteOptions& opts);
+
 	/** Class-aware wrapper for `::pdf_insert_colorspace_resource()`.  */
 	FZ_FUNCTION PdfObj pdf_insert_colorspace_resource(const PdfDocument& doc, const PdfColorspaceResourceKey& key, const PdfObj& obj);
 
 	/** Class-aware wrapper for `::pdf_insert_font_resource()`.  */
 	FZ_FUNCTION PdfObj pdf_insert_font_resource(const PdfDocument& doc, const PdfFontResourceKey& key, const PdfObj& obj);
+
+	/** Class-aware wrapper for `::pdf_insert_image_resource()`.  */
+	FZ_FUNCTION PdfObj pdf_insert_image_resource(const PdfDocument& doc, const PdfImageResourceKey& key, const PdfObj& obj);
 
 	/** Class-aware wrapper for `::pdf_insert_page()`.  */
 	FZ_FUNCTION void pdf_insert_page(const PdfDocument& doc, int at, const PdfObj& page);
@@ -11202,7 +11785,7 @@ namespace mupdf
 	FZ_FUNCTION FzColorspace pdf_load_colorspace(const PdfObj& obj);
 
 	/** Class-aware wrapper for `::pdf_load_compressed_inline_image()`.  */
-	FZ_FUNCTION void pdf_load_compressed_inline_image(const PdfDocument& doc, const PdfObj& dict, int length, const FzStream& cstm, int indexed, const FzCompressedImage& image);
+	FZ_FUNCTION void pdf_load_compressed_inline_image(const PdfDocument& doc, const PdfObj& dict, size_t length, const FzStream& cstm, int indexed, const FzCompressedImage& image);
 
 	/** Class-aware wrapper for `::pdf_load_compressed_stream()`.  */
 	FZ_FUNCTION FzCompressedBuffer pdf_load_compressed_stream(const PdfDocument& doc, int num, size_t worst_case);
@@ -11432,6 +12015,9 @@ namespace mupdf
 	/** Class-aware wrapper for `::pdf_mark_xref()`.  */
 	FZ_FUNCTION void pdf_mark_xref(const PdfDocument& doc);
 
+	/** Class-aware wrapper for `::pdf_maybe_throw_after_repair()`.  */
+	FZ_FUNCTION void pdf_maybe_throw_after_repair(const PdfDocument& doc);
+
 	/** Class-aware wrapper for `::pdf_metadata()`.  */
 	FZ_FUNCTION PdfObj pdf_metadata(const PdfDocument& doc);
 
@@ -11496,7 +12082,7 @@ namespace mupdf
 	FZ_FUNCTION PdfCmap pdf_new_identity_cmap(int wmode, int bytes);
 
 	/** Class-aware wrapper for `::pdf_new_indirect()`.  */
-	FZ_FUNCTION PdfObj pdf_new_indirect(const PdfDocument& doc, int num, int gen);
+	FZ_FUNCTION PdfObj pdf_new_indirect(const PdfDocument& doc, int64_t num, int gen);
 
 	/** Class-aware wrapper for `::pdf_new_int()`.  */
 	FZ_FUNCTION PdfObj pdf_new_int(int64_t i);
@@ -11616,6 +12202,9 @@ namespace mupdf
 	/** Class-aware wrapper for `::pdf_obj_is_incremental()`.  */
 	FZ_FUNCTION int pdf_obj_is_incremental(const PdfObj& obj);
 
+	/** Class-aware wrapper for `::pdf_obj_is_singleton()`.  */
+	FZ_FUNCTION int pdf_obj_is_singleton(const PdfObj& obj);
+
 	/** Class-aware wrapper for `::pdf_obj_marked()`.  */
 	FZ_FUNCTION int pdf_obj_marked(const PdfObj& obj);
 
@@ -11663,7 +12252,7 @@ namespace mupdf
 	FZ_FUNCTION PdfDocument pdf_open_document_with_stream(const FzStream& file);
 
 	/** Class-aware wrapper for `::pdf_open_inline_stream()`.  */
-	FZ_FUNCTION FzStream pdf_open_inline_stream(const PdfDocument& doc, const PdfObj& stmobj, int length, const FzStream& chain, const FzCompressionParams& params);
+	FZ_FUNCTION FzStream pdf_open_inline_stream(const PdfDocument& doc, const PdfObj& stmobj, size_t length, const FzStream& chain, const FzCompressionParams& params);
 
 	/** Class-aware wrapper for `::pdf_open_raw_stream()`.  */
 	FZ_FUNCTION FzStream pdf_open_raw_stream(const PdfObj& ref);
@@ -11781,6 +12370,9 @@ namespace mupdf
 
 	/** Class-aware wrapper for `::pdf_parse_write_options()`.  */
 	FZ_FUNCTION PdfWriteOptions pdf_parse_write_options(PdfWriteOptions& opts, const char *args);
+
+	/** Class-aware wrapper for `::pdf_pattern_uses_blending()`.  */
+	FZ_FUNCTION int pdf_pattern_uses_blending(const PdfObj& dict, const PdfCycleList& cycle_up);
 
 	/** Class-aware wrapper for `::pdf_pin_document()`.  */
 	FZ_FUNCTION PdfDocument pdf_pin_document(const PdfObj& obj);
@@ -12098,6 +12690,9 @@ namespace mupdf
 	/** Class-aware wrapper for `::pdf_set_annot_modification_date()`.  */
 	FZ_FUNCTION void pdf_set_annot_modification_date(const PdfAnnot& annot, int64_t time);
 
+	/** Class-aware wrapper for `::pdf_set_annot_name()`.  */
+	FZ_FUNCTION void pdf_set_annot_name(const PdfAnnot& annot, const char *name);
+
 	/** Class-aware wrapper for `::pdf_set_annot_opacity()`.  */
 	FZ_FUNCTION void pdf_set_annot_opacity(const PdfAnnot& annot, float opacity);
 
@@ -12127,6 +12722,9 @@ namespace mupdf
 
 	/** Class-aware wrapper for `::pdf_set_annot_stamp_image_obj()`.  */
 	FZ_FUNCTION void pdf_set_annot_stamp_image_obj(const PdfAnnot& annot, const PdfObj& ref);
+
+	/** Class-aware wrapper for `::pdf_set_annot_subject()`.  */
+	FZ_FUNCTION void pdf_set_annot_subject(const PdfAnnot& annot, const char *subject);
 
 	/** Class-aware wrapper for `::pdf_set_annot_vertex()`.  */
 	FZ_FUNCTION void pdf_set_annot_vertex(const PdfAnnot& annot, int i, const FzPoint& p);
@@ -12187,6 +12785,9 @@ namespace mupdf
 
 	/** Class-aware wrapper for `::pdf_set_text_field_value()`.  */
 	FZ_FUNCTION int pdf_set_text_field_value(const PdfAnnot& widget, const char *value);
+
+	/** Class-aware wrapper for `::pdf_set_trailer()`.  */
+	FZ_FUNCTION void pdf_set_trailer(const PdfDocument& doc, const PdfObj& obj);
 
 	/** Class-aware wrapper for `::pdf_set_usecmap()`.  */
 	FZ_FUNCTION void pdf_set_usecmap(const PdfCmap& cmap, const PdfCmap& usecmap);
@@ -12263,6 +12864,13 @@ namespace mupdf
 		`pdf_sprint_obj(char *buf, size_t cap, ::pdf_obj *obj, int tight, int ascii)` => `(char *, size_t len)`
 	 */
 	FZ_FUNCTION char *pdf_sprint_obj(char *buf, size_t cap, size_t *len, const PdfObj& obj, int tight, int ascii);
+
+	/** Class-aware wrapper for `::pdf_start_throw_on_repair()`.
+	
+	This function has out-params. Python/C# wrappers look like:
+		`pdf_start_throw_on_repair(::pdf_document *doc)` => int xref_base
+	 */
+	FZ_FUNCTION void pdf_start_throw_on_repair(const PdfDocument& doc, int *xref_base);
 
 	/** Class-aware wrapper for `::pdf_store_item()`.  */
 	FZ_FUNCTION void pdf_store_item(const PdfObj& key, void *val, size_t itemsize);
@@ -12371,6 +12979,12 @@ namespace mupdf
 	/** Class-aware wrapper for `::pdf_toggle_widget()`.  */
 	FZ_FUNCTION int pdf_toggle_widget(const PdfAnnot& widget);
 
+	/** Class-aware wrapper for `::pdf_tos_accumulate_clip()`.  */
+	FZ_FUNCTION void pdf_tos_accumulate_clip(const PdfTextObjectState& tos);
+
+	/** Class-aware wrapper for `::pdf_tos_get_clip_text()`.  */
+	FZ_FUNCTION FzText pdf_tos_get_clip_text(const PdfTextObjectState& tos);
+
 	/** Class-aware wrapper for `::pdf_tos_get_text()`.  */
 	FZ_FUNCTION FzText pdf_tos_get_text(const PdfTextObjectState& tos);
 
@@ -12452,7 +13066,10 @@ namespace mupdf
 	FZ_FUNCTION int pdf_validate_changes(const PdfDocument& doc, int version);
 
 	/** Class-aware wrapper for `::pdf_validate_signature()`.  */
-	FZ_FUNCTION int pdf_validate_signature(const PdfAnnot& widget);
+	FZ_FUNCTION int pdf_validate_signature(const PdfDocument& doc, const PdfObj& field);
+
+	/** Class-aware wrapper for `::pdf_validate_signature_widget()`.  */
+	FZ_FUNCTION int pdf_validate_signature_widget(const PdfAnnot& widget);
 
 	/** Class-aware wrapper for `::pdf_vectorize_page()`.  */
 	FZ_FUNCTION void pdf_vectorize_page(const PdfPage& page);
